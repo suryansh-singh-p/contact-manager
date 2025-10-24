@@ -61,7 +61,7 @@ export const ContactDetailsView = ({ contact, onBack, onEdit, onDelete }) => {
           className="w-full max-w-3xl"
           onClick={(e) => e.stopPropagation()}
         >
-          <div className="mb-8 flex items-center justify-between flex-wrap gap-4">
+          <div className="flex items-center justify-between flex-wrap gap-4" style={{ marginBottom: '12px' }}>
             <div style={{ backgroundColor: 'white', borderRadius: '24px', padding: '8px 12px' }}>
               <BackButton onClick={onBack} />
             </div>
