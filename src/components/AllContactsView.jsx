@@ -24,6 +24,24 @@ export const AllContactsView = ({ contacts, onSelectContact, onAddContact }) => 
       className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100"
     >
             <div className="w-full" style={{ paddingTop: '48px' }}>
+                <div className="relative">
+                    <motion.div
+                        initial={{ opacity: 0, x: 20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className="absolute top-0 right-8 text-sm text-gray-600"
+                    >
+                        Built by{' '}
+                        <a
+                            href="https://drive.google.com/file/d/1sy4CRzXze9jFNXTOUeOJTNnL6cguu_op/view?usp=drive_link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:text-blue-700 underline font-medium transition-colors"
+                        >
+                            Suryansh Singh Parihar
+                        </a>
+                    </motion.div>
+                </div>
                 <div className="text-center mb-8">
                     <motion.h1
                         initial={{ opacity: 0, y: -20 }}
